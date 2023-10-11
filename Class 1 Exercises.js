@@ -99,4 +99,15 @@ console.log("Extracted first name", extractedFirstName);
 // Look online for documentation on Date objects.
 
 // Starting hint:
-const endDate = new Date(2019, 3, 1);
+const endDate = new Date(2020, 3, 1);
+const startDate = new Date(2020, 0, 1);
+
+const middleDateTimestamp = ((startDate.getTime() + endDate.getTime()) / 2);
+
+const middleDate = new Date(middleDateTimestamp);
+
+console.log("Start date", startDate);
+console.log("End date", endDate);
+console.log("Middle date", middleDate);
+
+
